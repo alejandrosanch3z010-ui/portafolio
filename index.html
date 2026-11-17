@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Sánchez | Desarrollador web full stack</title>
+  <meta name="description" content="Portafolio de David Alejandro Sánchez Vital, desarrollador web full stack y estudiante de Ingeniería en Informática en el ITESI. Tiendas en línea, sistemas administrativos y sitios web con PHP, MySQL y JavaScript.">
+  <meta name="author" content="David Alejandro Sánchez Vital">
+  <meta name="theme-color" content="#1A1E3A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="pagina">
+    <!-- Hero / presentación: fijo a la izquierda en escritorio -->
+    <header class="hero">
+      <div class="hero-marca" aria-hidden="true">DS</div>
+      <h1 class="hero-nombre">David Alejandro Sánchez Vital</h1>
+      <p class="hero-titulo">Desarrollador web full stack</p>
+      <p class="hero-propuesta">Construyo tiendas en línea, sistemas administrativos y sitios web con PHP, MySQL y JavaScript, desde la base de datos hasta la publicación.</p>
+
+      <div class="hero-acciones">
+        <a class="boton boton-principal" href="docs/CV_David_Sanchez_Vital.pdf" download>Descargar CV (PDF)</a>
+        <a class="boton" href="#contacto">Contactarme</a>
+        <a class="boton" href="https://github.com/alejandrosanch3z010-ui" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
+      <nav class="hero-nav" aria-label="Secciones">
+        <ul>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#stack">Stack y habilidades</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <p class="hero-ubicacion">Irapuato, Guanajuato. Abierto a prácticas profesionales y proyectos freelance.</p>
+    </header>
+
+    <main id="contenido">
+      <!-- Catálogo de proyectos -->
+      <section id="proyectos" class="seccion" aria-labelledby="titulo-proyectos">
+        <h2 id="titulo-proyectos">Proyectos</h2>
+        <p class="seccion-intro">Sistemas y sitios que he desarrollado en la carrera, solo o con mi equipo Mala Fama Crew. En los dos primeros puedes abrir el caso completo.</p>
+
+        <article class="proyecto" style="--tono:#2B1E5C; --tono-claro:#E7E1FF">
+          <figure class="proyecto-imagen">
+            <img src="assets/img/proyectos/malafama-inicio.webp" width="1280" height="625" alt="Página de inicio de Mala Fama Games con carrusel de portadas de juegos de PS5" loading="lazy" decoding="async">
+          </figure>
+          <div class="proyecto-cuerpo">
+            <h3>Mala Fama Games</h3>
+            <p class="proyecto-meta">Proyecto final en equipo, 2026. Coordiné el desarrollo.</p>
+            <p>Tienda en línea de juegos de PS5 en físico y digital. Resuelve la venta completa: catálogo con filtros, preventas con contador, carrito, pagos simulados, puntos de recompensa y un panel para administrar inventario, pedidos e informes.</p>
+            <ul class="etiquetas" aria-label="Tecnologías">
+              <li>PHP</li><li>MySQL</li><li>JavaScript</li><li>API REST</li><li>GSAP</li><li>Git</li>
+            </ul>
+            <div class="proyecto-enlaces">
+              <button class="enlace-caso" type="button" data-abrir="caso-malafama">Ver caso completo</button>
+              <a href="https://github.com/alejandrosanch3z010-ui/malafama-games" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto" style="--tono:#1F4FA8; --tono-claro:#E1EBFF">
+          <figure class="proyecto-imagen">
+            <img src="assets/img/proyectos/peoplelink-dashboard.webp" width="1280" height="625" alt="Dashboard de PeopleLink con totales de empleados, usuarios y asistencias y gráficas" loading="lazy" decoding="async">
+          </figure>
+          <div class="proyecto-cuerpo">
+            <h3>PeopleLink</h3>
+            <p class="proyecto-meta">Sistema empresarial, 2026.</p>
+            <p>Gestor de empleados para una empresa: perfiles, asistencias, permisos, nóminas y reportes exportables a Excel, con roles de empleado, gerente y administrador. Fue el sistema mejor protegido de la clase en la evaluación de ataques.</p>
+            <ul class="etiquetas" aria-label="Tecnologías">
+              <li>PHP</li><li>MySQL</li><li>Bootstrap 5</li><li>Chart.js</li><li>Seguridad</li>
+            </ul>
+            <div class="proyecto-enlaces">
+              <button class="enlace-caso" type="button" data-abrir="caso-peoplelink">Ver caso completo</button>
+              <a href="https://github.com/alejandrosanch3z010-ui/peoplelink" target="_blank" rel="noopener">Repositorio</a>
+              <a href="https://minimalcodetest.com/deisi/empleados1/empleados1/login.php" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto" style="--tono:#C8242F; --tono-claro:#FFE3E1">
+          <figure class="proyecto-imagen">
+            <img src="assets/img/proyectos/codex616-inicio.webp" width="1280" height="625" alt="Portada de Códex 616 con el título Héroes que saltan del cómic y una tarjeta de Spider-Man" loading="lazy" decoding="async">
+          </figure>
+          <div class="proyecto-cuerpo">
+            <h3>Códex 616</h3>
+            <p class="proyecto-meta">Sitio publicado, 2026.</p>
+            <p>Archivo interactivo de 22 personajes de Marvel. Cada ficha combina una tarjeta 2D por capas con un modelo 3D que se puede girar, filtros por categoría, buscador y una sección de favoritos.</p>
+            <ul class="etiquetas" aria-label="Tecnologías">
+              <li>JavaScript</li><li>Three.js</li><li>HTML</li><li>CSS</li><li>Hostinger</li>
+            </ul>
+            <div class="proyecto-enlaces">
+              <a href="https://github.com/alejandrosanch3z010-ui/codex-616" target="_blank" rel="noopener">Repositorio</a>
+              <a href="https://codex616.malafamacrew.com/" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto" style="--tono:#9C7A35; --tono-claro:#F6ECD6">
+          <figure class="proyecto-imagen">
+            <img src="assets/img/proyectos/hotel-nebula-inicio.webp" width="1280" height="625" alt="Portada de Hotel Nébula con la fachada del hotel de noche" loading="lazy" decoding="async">
+          </figure>
+          <div class="proyecto-cuerpo">
+            <h3>Hotel Nébula</h3>
+            <p class="proyecto-meta">Sitio web, 2026.</p>
+            <p>Sitio para un hotel boutique ficticio en Irapuato. Presenta cuatro tipos de habitación con galería y permite solicitar una reservación con cálculo del total estimado según noches y huéspedes.</p>
+            <ul class="etiquetas" aria-label="Tecnologías">
+              <li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="proyecto-enlaces">
+              <a href="https://github.com/alejandrosanch3z010-ui/hotel-nebula" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto" style="--tono:#B31F78; --tono-claro:#FFE0F1">
+          <figure class="proyecto-imagen">
+            <img src="assets/img/proyectos/arte-urbano-portada.webp" width="1280" height="625" alt="Portada de la galería de arte urbano con un búho en estilo grafiti" loading="lazy" decoding="async">
+          </figure>
+          <div class="proyecto-cuerpo">
+            <h3>Galería de arte urbano</h3>
+            <p class="proyecto-meta">Museo virtual, 2026.</p>
+            <p>Landing page tipo museo sobre el arte urbano: características, exponentes, obras y línea del tiempo, con una interfaz que imita los muros, el aerosol y los carteles del movimiento.</p>
+            <ul class="etiquetas" aria-label="Tecnologías">
+              <li>PHP</li><li>HTML</li><li>CSS</li><li>Diseño UI</li>
+            </ul>
+            <div class="proyecto-enlaces">
+              <a href="https://github.com/alejandrosanch3z010-ui/arte-urbano" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Stack tecnológico -->
+      <section id="stack" class="seccion" aria-labelledby="titulo-stack">
+        <h2 id="titulo-stack">Stack y habilidades</h2>
+        <p class="seccion-intro">Herramientas que he usado en proyectos reales, agrupadas por área.</p>
+
+        <div class="stack">
+          <div class="stack-grupo">
+            <h3>Lenguajes</h3>
+            <ul><li>PHP</li><li>JavaScript</li><li>SQL</li><li>Python</li><li>C# (aprendiendo)</li></ul>
+          </div>
+          <div class="stack-grupo">
+            <h3>Desarrollo web</h3>
+            <ul><li>HTML5 y CSS3</li><li>APIs REST</li><li>Sesiones, roles y permisos</li><li>Bootstrap</li><li>Chart.js</li><li>GSAP</li><li>Three.js</li></ul>
+          </div>
+          <div class="stack-grupo">
+            <h3>Bases de datos</h3>
+            <ul><li>MySQL / MariaDB</li><li>SQL Server</li><li>Modelo entidad-relación</li><li>Normalización</li><li>SSIS</li></ul>
+          </div>
+          <div class="stack-grupo">
+            <h3>Seguridad</h3>
+            <ul><li>Consultas parametrizadas (PDO)</li><li>Cifrado de contraseñas</li><li>Respaldos</li><li>Bitácoras de auditoría</li></ul>
+          </div>
+          <div class="stack-grupo">
+            <h3>Servidores y despliegue</h3>
+            <ul><li>XAMPP</li><li>Hostinger (dominio y subdominios)</li><li>Windows Server</li><li>Ubuntu Server</li><li>VirtualBox</li></ul>
+          </div>
+          <div class="stack-grupo">
+            <h3>Apps, hardware y herramientas</h3>
+            <ul><li>.NET MAUI</li><li>Asistentes de voz y TV inteligente</li><li>Git y GitHub</li><li>VS Code</li><li>Visual Studio</li><li>Canva</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trayectoria -->
+      <section id="trayectoria" class="seccion" aria-labelledby="titulo-trayectoria">
+        <h2 id="titulo-trayectoria">Trayectoria y formación</h2>
+
+        <ol class="linea">
+          <li>
+            <span class="linea-fecha">2023 – 2027</span>
+            <div>
+              <h3>Ingeniería en Informática, ITESI</h3>
+              <p>Instituto Tecnológico Superior de Irapuato. Cursando séptimo semestre, con enfoque en desarrollo web, bases de datos y servidores.</p>
+            </div>
+          </li>
+          <li>
+            <span class="linea-fecha">2026</span>
+            <div>
+              <h3>Sistema más seguro de la clase</h3>
+              <p>PeopleLink resistió los ataques de otro equipo y de estudiantes de Sistemas en la evaluación final; lo recuperé en minutos con respaldos y bitácora.</p>
+            </div>
+          </li>
+          <li>
+            <span class="linea-fecha">2025</span>
+            <div>
+              <h3>Aplicación para agricultores</h3>
+              <p>Propuesta para registrar mediciones de suelo y sugerir qué sembrar según el clima, expuesta ante un panel de maestros.</p>
+            </div>
+          </li>
+          <li>
+            <span class="linea-fecha">2024</span>
+            <div>
+              <h3>Proyecto de Desarrollo Sustentable</h3>
+              <p>Representación de China con un dragón construido en equipo para la feria de la materia.</p>
+            </div>
+          </li>
+          <li>
+            <span class="linea-fecha">2023</span>
+            <div>
+              <h3>Staff de la Semana Tecnológica del ITESI</h3>
+              <p>Apoyo en la organización del evento institucional durante el primer semestre.</p>
+            </div>
+          </li>
+          <li>
+            <span class="linea-fecha">2019 – 2023</span>
+            <div>
+              <h3>Bachillerato, CECyTE No. 1 Irapuato</h3>
+              <p>Al terminar cumplí también mi servicio militar.</p>
+            </div>
+          </li>
+          <li>
+            <span class="linea-fecha">2018</span>
+            <div>
+              <h3>Feria de ciencias, Secundaria Técnica No. 5</h3>
+              <p>Staff y encargado de los experimentos del grupo.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="seccion" aria-labelledby="titulo-contacto">
+        <h2 id="titulo-contacto">Contacto</h2>
+        <p class="seccion-intro">¿Tienes un proyecto o una vacante? Escríbeme y te respondo en menos de 48 horas.</p>
+
+        <div class="contacto">
+          <form id="form-contacto" class="formulario" novalidate>
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required minlength="3" data-error="error-nombre">
+              <p id="error-nombre" class="error" hidden>Escribe tu nombre (mínimo 3 letras).</p>
+            </div>
+            <div class="campo">
+              <label for="correo">Correo</label>
+              <span id="pista-correo" class="pista">Ejemplo: tu@empresa.com</span>
+              <input id="correo" name="correo" type="email" autocomplete="email" required aria-describedby="pista-correo" data-error="error-correo">
+              <p id="error-correo" class="error" hidden>Escribe un correo con el formato tu@empresa.com.</p>
+            </div>
+            <div class="campo">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto" required data-error="error-asunto">
+                <option value="">Elige una opción</option>
+                <option>Vacante o prácticas</option>
+                <option>Proyecto freelance</option>
+                <option>Otro</option>
+              </select>
+              <p id="error-asunto" class="error" hidden>Elige el motivo de tu mensaje.</p>
+            </div>
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required minlength="20" data-error="error-mensaje"></textarea>
+              <p id="error-mensaje" class="error" hidden>Escribe un mensaje de al menos 20 caracteres.</p>
+            </div>
+            <button class="boton boton-principal" type="submit">Enviar mensaje</button>
+            <p id="estado-form" class="estado" role="status"></p>
+          </form>
+
+          <ul class="enlaces-pro">
+            <li><a href="mailto:alejandrosanch3z010@gmail.com">alejandrosanch3z010@gmail.com</a></li>
+            <li><a href="https://github.com/alejandrosanch3z010-ui" target="_blank" rel="noopener">GitHub: alejandrosanch3z010-ui</a></li>
+            <li><a href="https://www.linkedin.com/in/david-sanchez-vital" target="_blank" rel="noopener">LinkedIn: david-sanchez-vital</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>© 2026 David Alejandro Sánchez Vital. Hecho a mano con HTML, CSS y JavaScript.</p>
+    </footer>
+  </div>
+
+  <!-- Caso completo: Mala Fama Games -->
+  <dialog id="caso-malafama" class="caso" closedby="any" aria-labelledby="caso-malafama-titulo">
+    <div class="caso-contenido" style="--tono:#2B1E5C; --tono-claro:#E7E1FF">
+      <button class="caso-cerrar" type="button" data-cerrar aria-label="Cerrar">×</button>
+      <h2 id="caso-malafama-titulo">Mala Fama Games</h2>
+      <p class="caso-resumen">Proyecto final de la materia de software: un punto de venta en línea especializado en juegos de PS5, hecho por cuatro integrantes con Git y revisado en avances semanales.</p>
+
+      <ul class="metricas">
+        <li><strong>29</strong> commits de 4 integrantes</li>
+        <li><strong>21</strong> juegos con versiones Estándar, Deluxe y Ultimate</li>
+        <li><strong>44</strong> casos en la bitácora de pruebas</li>
+        <li><strong>3</strong> roles: administrador, empleado y cliente</li>
+      </ul>
+
+      <h3>Arquitectura</h3>
+      <figure class="arquitectura">
+        <svg viewBox="0 0 640 210" role="img" aria-labelledby="arq-mf-t">
+          <title id="arq-mf-t">El navegador consume páginas PHP y la API REST; ambas usan la misma lógica y la base de datos MySQL</title>
+          <g class="nodo"><rect x="10" y="80" width="130" height="50" rx="8"/><text x="75" y="110">Navegador</text></g>
+          <g class="nodo"><rect x="210" y="20" width="180" height="50" rx="8"/><text x="300" y="50">Páginas PHP</text></g>
+          <g class="nodo"><rect x="210" y="140" width="180" height="50" rx="8"/><text x="300" y="170">API REST /api</text></g>
+          <g class="nodo"><rect x="460" y="80" width="170" height="50" rx="8"/><text x="545" y="110">MySQL + .env</text></g>
+          <path class="flecha" d="M140 100 L205 50 M140 110 L205 165 M390 45 L455 100 M390 165 L455 115"/>
+        </svg>
+        <figcaption>Las páginas de la tienda y la API comparten la lógica en <code>includes/</code> y se conectan a MySQL con credenciales en <code>.env</code>. La API se enruta desde <code>api/enrutador.php</code>.</figcaption>
+      </figure>
+
+      <h3>Retos que resolvimos</h3>
+      <ul class="lista">
+        <li><strong>Commits de todo el equipo desde una sola computadora.</strong> Configuramos la identidad de Git de cada integrante antes de cada commit en VS Code, para que el historial muestre quién hizo cada parte.</li>
+        <li><strong>Varias ediciones sin duplicar datos.</strong> Las versiones Deluxe y Ultimate comparten la portada y la ficha del juego; solo cambian precio, contenido y formato.</li>
+        <li><strong>Pagos sin cobrar nada.</strong> Simulamos tarjeta, PayPal, Mercado Pago y OXXO Pay, y cada pedido muestra un aviso de que la tienda es escolar.</li>
+        <li><strong>Carga ligera.</strong> Convertimos las 21 portadas a WebP en versión vertical y cuadrada.</li>
+      </ul>
+
+      <h3>Capturas</h3>
+      <div class="galeria">
+        <img src="assets/img/proyectos/malafama-preventa.webp" width="1280" height="627" alt="Preventa de Grand Theft Auto VI con contador y el Top 10 de juegos" loading="lazy" decoding="async">
+        <img src="assets/img/proyectos/malafama-ficha.webp" width="1280" height="625" alt="Ficha de un juego con selección de versión y formato" loading="lazy" decoding="async">
+        <img src="assets/img/proyectos/malafama-carrito.webp" width="1280" height="625" alt="Carrito de compras con resumen y puntos que gana el cliente" loading="lazy" decoding="async">
+        <img src="assets/img/proyectos/malafama-github.webp" width="1280" height="625" alt="Repositorio de Mala Fama Games en GitHub con sus carpetas y commits" loading="lazy" decoding="async">
+      </div>
+
+      <div class="proyecto-enlaces">
+        <a href="https://github.com/alejandrosanch3z010-ui/malafama-games" target="_blank" rel="noopener">Ver el repositorio</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Caso completo: PeopleLink -->
+  <dialog id="caso-peoplelink" class="caso" closedby="any" aria-labelledby="caso-peoplelink-titulo">
+    <div class="caso-contenido" style="--tono:#1F4FA8; --tono-claro:#E1EBFF">
+      <button class="caso-cerrar" type="button" data-cerrar aria-label="Cerrar">×</button>
+      <h2 id="caso-peoplelink-titulo">PeopleLink</h2>
+      <p class="caso-resumen">Sistema de gestión de empleados que, además de funcionar, tenía que sobrevivir a una evaluación final en la que otros equipos intentaban entrar y dañarlo.</p>
+
+      <ul class="metricas">
+        <li><strong>101</strong> empleados registrados en la demo</li>
+        <li><strong>3</strong> roles con permisos distintos</li>
+        <li><strong>IP</strong> registrada en cada acción de la bitácora</li>
+        <li><strong>1.º</strong> lugar en seguridad de la clase</li>
+      </ul>
+
+      <h3>Arquitectura</h3>
+      <figure class="arquitectura">
+        <svg viewBox="0 0 640 210" role="img" aria-labelledby="arq-pl-t">
+          <title id="arq-pl-t">Cada petición pasa por la sesión y los permisos antes de llegar a los módulos; los módulos usan PDO con MySQL y registran cada acción en la bitácora</title>
+          <g class="nodo"><rect x="10" y="80" width="130" height="50" rx="8"/><text x="75" y="110">Navegador</text></g>
+          <g class="nodo"><rect x="190" y="80" width="150" height="50" rx="8"/><text x="265" y="110">Sesión y roles</text></g>
+          <g class="nodo"><rect x="390" y="20" width="240" height="50" rx="8"/><text x="510" y="50">Módulos + PDO → MySQL</text></g>
+          <g class="nodo"><rect x="390" y="140" width="240" height="50" rx="8"/><text x="510" y="170">Bitácora con IP y respaldos</text></g>
+          <path class="flecha" d="M140 105 L185 105 M340 100 L385 50 M340 110 L385 165"/>
+        </svg>
+        <figcaption>Ninguna página se muestra sin una sesión válida y el rol correcto. Todas las consultas son parametrizadas y cada acción queda registrada con usuario, fecha e IP.</figcaption>
+      </figure>
+
+      <h3>Retos que resolví</h3>
+      <ul class="lista">
+        <li><strong>Un ataque real durante la evaluación.</strong> Otro equipo logró entrar. Con la bitácora identifiqué su IP y cuenta, les quité el acceso y restauré el respaldo.</li>
+        <li><strong>Control total sin tocar la base de datos.</strong> Agregué un Panel Superadmin para cerrar sesiones activas y revisar la auditoría.</li>
+        <li><strong>Registro de asistencias que fallaba.</strong> Depuré el flujo hasta que las asistencias se guardaran y se reflejaran en la gráfica del día.</li>
+      </ul>
+
+      <h3>Capturas</h3>
+      <div class="galeria">
+        <img src="assets/img/proyectos/peoplelink-login.webp" width="1280" height="625" alt="Inicio de sesión de PeopleLink" loading="lazy" decoding="async">
+        <img src="assets/img/proyectos/peoplelink-empleados.webp" width="1280" height="625" alt="Lista de empleados con búsqueda, paginación y exportación a Excel" loading="lazy" decoding="async">
+      </div>
+
+      <div class="proyecto-enlaces">
+        <a href="https://minimalcodetest.com/deisi/empleados1/empleados1/login.php" target="_blank" rel="noopener">Abrir la demo</a>
+        <a href="https://github.com/alejandrosanch3z010-ui/peoplelink" target="_blank" rel="noopener">Ver el repositorio</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
